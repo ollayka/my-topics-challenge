@@ -3,7 +3,7 @@ import React from 'react'
 export default function Topic(props) {
     const {label, sentimentScore, volume} = props.item
     const {popularityGroups} = props
-    const fontSizes = [20, 30, 40, 50, 60, 70]
+    const fontSizes = [12, 18, 24, 30, 36, 42]
 
     const setFontSize = (num, arr) => arr.findIndex(el => el.includes(num))
 
@@ -11,7 +11,7 @@ export default function Topic(props) {
 
     const styleObj = {
         fontSize: fontSizes[setFontSize(volume, popularityGroups)],
-        color: setFontColor(sentimentScore)
+        color: setFontColor(sentimentScore),
     }
 
     return (

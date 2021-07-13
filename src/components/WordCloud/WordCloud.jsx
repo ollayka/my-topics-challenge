@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import Topic from "../Topic/Topic"
+import "./WordCloud.css"
 
 export default function WordCloud(props) {
    const {topics} = props;
@@ -20,7 +21,7 @@ export default function WordCloud(props) {
 
    let popularityGroups = setFontGroups(topics)
 
-    return (<div>
-    {topics.map((item, index) => <Topic key={index} item={item} popularityGroups={popularityGroups}/>)}
+    return (<div className="wordcloud-container">
+    {topics.sort(() => Math.random() - 0.5).map((item, index) => <Topic key={index} item={item} popularityGroups={popularityGroups}/>)}
     </div>)
 }
