@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import data from "./topics.json"
+import WordCloud from "./components/WordCloud/WordCloud.jsx"
 
-function App() {
+const {topics} = data
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>My Topics Challenge</h1>
+    <WordCloud topics={topics}/>
     </div>
   );
 }
-
-export default App;
