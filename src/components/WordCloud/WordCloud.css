@@ -1,13 +1,30 @@
+.content-container {
+  display: flex;
+}
+
 .wordcloud-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 65vw;
-    height: 50vh;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  height: 50vh;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
 }
 
 .wordcloud-container > * {
-    padding: 5px 10px;
-    text-align: center;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.metadata-container {
+  padding: 50px;
+}
+
+.metadata-container div {
+  padding: 10px 0;
+}
+
+.metadata-container p {
+  margin: auto;
 }
