@@ -5,7 +5,6 @@ import "./WordCloud.css";
 
 export default function WordCloud(props) {
   const { topics } = props;
-  //   const topicsRandomized = topics.sort(() => Math.random() - 0.5);
   const [showMetadata, setShowMetadata] = useState(false);
   const [topicSelected, setTopicSelected] = useState({});
 
