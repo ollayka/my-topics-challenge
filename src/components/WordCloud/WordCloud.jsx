@@ -31,7 +31,7 @@ export default function WordCloud(props) {
   let popularityGroups = setFontGroups(topics);
 
   function onClick(value) {
-    setShowMetadata(!showMetadata);
+    setShowMetadata(true);
     setTopicSelected(value);
   }
 
