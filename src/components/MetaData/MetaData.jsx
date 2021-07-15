@@ -6,7 +6,7 @@ export default function MetaData({ topic }) {
 
   //added validation for topics without mentions assigned to a certain sentiment to display "0"
   return (
-    <div>
+    <div data-testid="metadata">
       <div>Information on topic "{label}":</div>
       <div>Total Mentions: {volume}</div>
       <div>

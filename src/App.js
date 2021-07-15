@@ -9,7 +9,7 @@ const topicsRandomized = topics.sort(() => Math.random() - 0.5);
 export default function App() {
   return (
     <div className="App">
-      <h1>My Topics Challenge</h1>
+      <h1 data-testid="header">My Topics Challenge</h1>
       <WordCloud topics={topicsRandomized} />
     </div>
   );

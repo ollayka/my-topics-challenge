@@ -18,7 +18,7 @@ export default function Topic({ popularityGroups, onClick, item }) {
   };
 
   return (
-    <div style={styleObj} onClick={() => onClick(item)}>
+    <div data-testid="label" style={styleObj} onClick={() => onClick(item)}>
       {label}
     </div>
   );
