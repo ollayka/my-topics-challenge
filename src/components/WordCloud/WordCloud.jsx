@@ -6,7 +6,7 @@ import "./WordCloud.css";
 export default function WordCloud({ topics }) {
   //define if the metadata should be displayed
   const [showMetadata, setShowMetadata] = useState(false);
-  //define which topic is clicked
+  //define info on which topic should be displayed
   const [topicSelected, setTopicSelected] = useState({});
 
   //function to split topics into 6 popularity groups (to be displayed in different font sizes)
@@ -40,7 +40,7 @@ export default function WordCloud({ topics }) {
 
   return (
     <div className="content-container">
-      {/* map through the topics array (in randomized order), display each label as a component, pass down necessary props  */}
+      {/* map through the randomized topics array, display each label as a component, pass down necessary props  */}
       <div data-testid="wordcloud" className="wordcloud-container">
         {topics.map((item, index) => (
           <Topic
