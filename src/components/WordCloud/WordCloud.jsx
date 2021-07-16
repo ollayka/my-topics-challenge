@@ -41,7 +41,7 @@ export default function WordCloud({ topics }) {
   return (
     <div className="content-container">
       {/* map through the topics array (in randomized order), display each label as a component, pass down necessary props  */}
-      <div cdata-testid="wordcloud" lassName="wordcloud-container">
+      <div data-testid="wordcloud" className="wordcloud-container">
         {topics.map((item, index) => (
           <Topic
             key={index}
